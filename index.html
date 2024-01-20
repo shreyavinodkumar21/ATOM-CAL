@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Distance and Angle Calculator</title>
+    <style>
+        #angleOptions {
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Distance and Angle Calculator</h1>
+    <label for="calculationType">Select Calculation Type:</label>
+    <select id="calculationType">
+        <option value="distance">Distance</option>
+        <option value="angle">Angle</option>
+    </select>
+    <br />
+
+    <div id="distanceOptions">
+        <!-- Your distance dropdowns and labels go here -->
+        <label for="firstDropdown">Select residue number:</label>
+        <select id="firstDropdown" onchange="updateSecondDropdown()">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+          <option value="32">32</option>
+          <option value="33">33</option>
+          <option value="34">34</option>
+          <option value="35">35</option>
+          <option value="36">36</option>
+          <option value="37">37</option>
+          <option value="38">38</option>
+          <option value="39">39</option>
+          <option value="40">40</option>
+          <option value="41">41</option>
+          <option value="42">42</option>
+          <option value="43">43</option>
+          <option value="44">44</option>
+          <option value="45">45</option>
+          <option value="46">46</option>
+          <option value="47">47</option>
+          <option value="48">48</option>
+          <option value="49">49</option>
+          <option value="50">50</option>
+          <option value="51">51</option>
+          <option value="52">52</option>
+          <option value="53">53</option>
+          <option value="54">54</option>
+          <option value="55">55</option>
+          <option value="56">56</option>
+          <option value="57">57</option>
+          <option value="58">58</option>
+          <option value="59">59</option>
+          <option value="60">60</option>
+          <option value="61">61</option>
+          <option value="62">62</option>
+          <option value="63">63</option>
+          <option value="64">64</option>
+          <option value="65">65</option>
+          <option value="66">66</option>
+          <option value="67">67</option>
+          <option value="68">68</option>
+          <option value="69">69</option>
+          <option value="70">70</option>
+          <option value="71">71</option>
+          <option value="72">72</option>
+          <option value="73">73</option>
+          <option value="74">74</option>
+          <option value="75">75</option>
+          <option value="76">76</option>
+          <option value="77">77</option>
+          <option value="78">78</option>
+          <option value="79">79</option>
+          <option value="80">80</option>
+          <option value="81">81</option>
+          <option value="82">82</option>
+          <option value="83">83</option>
+          <option value="84">84</option>
+          <option value="85">85</option>
+          <option value="86">86</option>
+          <option value="87">87</option>
+          <option value="88">88</option>
+          <option value="89">89</option>
+          <option value="90">90</option>
+          <option value="91">91</option>
+          <option value="92">92</option>
+          <option value="93">93</option>
+          <option value="94">94</option>
+          <option value="95">95</option>
+          <option value="96">96</option>
+          <option value="97">97</option>
+          <option value="98">98</option>
+          <option value="99">99</option>
+          <option value="100">100</option>
+          <option value="101">101</option>
+          <option value="102">102</option>
+          <option value="103">103</option>
+          <option value="104">104</option>
+          <option value="105">105</option>
+          <option value="106">106</option>
+          <option value="107">107</option>
+          <option value="108">108</option>
+          <option value="109">109</option>
+          <option value="110">110</option>
+          <option value="111">111</option>
+          <option value="112">112</option>
+          <option value="113">113</option>
+          <option value="114">114</option>
+          <option value="115">115</option>
+          <option value="116">116</option>
+          <option value="117">117</option>
+          <option value="118">118</option>
+          <option value="119">119</option>
+          <option value="120">120</option>
+          <option value="121">121</option>
+          <option value="122">122</option>
+          <option value="123">123</option>
+          <option value="124">124</option>
+          <option value="125">125</option>
+          <option value="126">126</option>
+          <option value="127">127</option>
+          <option value="128">128</option>
+          <option value="129">129</option>
+          <option value="130">130</option>
+          <option value="131">131</option>
+          <option value="132">132</option>
+          <option value="133">133</option>
+          <option value="134">134</option>
+          <option value="135">135</option>
+          <option value="136">136</option>
+          <option value="137">137</option>
+        </select>
+        <br/>
+        <label for="secondDropdown">Select atom name:</label>
+        <select id="secondDropdown">
+          <!-- Options will be dynamically populated based on the selection in the first dropdown -->
+        </select>
+        <br/>
+        <label for="firstDropdown1">Select residue number:</label>
+        <select id="firstDropdown1" onchange="updateSecondDropdown1()">
+           <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+           <option value="5">5</option>
+           <option value="6">6</option>
+           <option value="7">7</option>
+           <option value="8">8</option>
+           <option value="9">9</option>
+           <option value="10">10</option>
+           <option value="11">11</option>
+           <option value="12">12</option>
+           <option value="13">13</option>
+           <option value="14">14</option>
+           <option value="15">15</option>
+           <option value="16">16</option>
+           <option value="17">17</option>
+           <option value="18">18</option>
+           <option value="19">19</option>
+           <option value="20">20</option>
+           <option value="21">21</option>
+           <option value="22">22</option>
+           <option value="23">23</option>
+           <option value="24">24</option>
+           <option value="25">25</option>
+           <option value="26">26</option>
+           <option value="27">27</option>
+           <option value="28">28</option>
+           <option value="29">29</option>
+           <option value="30">30</option>
+           <option value="31">31</option>
+           <option value="32">32</option>
+           <option value="33">33</option>
+           <option value="34">34</option>
+           <option value="35">35</option>
+           <option value="36">36</option>
+           <option value="37">37</option>
+           <option value="38">38</option>
+           <option value="39">39</option>
+           <option value="40">40</option>
+           <option value="41">41</option>
+           <option value="42">42</option>
+           <option value="43">43</option>
+           <option value="44">44</option>
+           <option value="45">45</option>
+           <option value="46">46</option>
+           <option value="47">47</option>
+           <option value="48">48</option>
+           <option value="49">49</option>
+           <option value="50">50</option>
+           <option value="51">51</option>
+           <option value="52">52</option>
+           <option value="53">53</option>
+           <option value="54">54</option>
+           <option value="55">55</option>
+           <option value="56">56</option>
+           <option value="57">57</option>
+           <option value="58">58</option>
+           <option value="59">59</option>
+           <option value="60">60</option>
+           <option value="61">61</option>
+           <option value="62">62</option>
+           <option value="63">63</option>
+           <option value="64">64</option>
+           <option value="65">65</option>
+           <option value="66">66</option>
+           <option value="67">67</option>
+           <option value="68">68</option>
+           <option value="69">69</option>
+           <option value="70">70</option>
+           <option value="71">71</option>
+           <option value="72">72</option>
+           <option value="73">73</option>
+           <option value="74">74</option>
+           <option value="75">75</option>
+           <option value="76">76</option>
+           <option value="77">77</option>
+           <option value="78">78</option>
+           <option value="79">79</option>
+           <option value="80">80</option>
+           <option value="81">81</option>
+           <option value="82">82</option>
+           <option value="83">83</option>
+           <option value="84">84</option>
+           <option value="85">85</option>
+           <option value="86">86</option>
+           <option value="87">87</option>
+           <option value="88">88</option>
+           <option value="89">89</option>
+           <option value="90">90</option>
+           <option value="91">91</option>
+           <option value="92">92</option>
+           <option value="93">93</option>
+           <option value="94">94</option>
+           <option value="95">95</option>
+           <option value="96">96</option>
+           <option value="97">97</option>
+           <option value="98">98</option>
+           <option value="99">99</option>
+           <option value="100">100</option>
+           <option value="101">101</option>
+           <option value="102">102</option>
+           <option value="103">103</option>
+           <option value="104">104</option>
+           <option value="105">105</option>
+           <option value="106">106</option>
+           <option value="107">107</option>
+           <option value="108">108</option>
+           <option value="109">109</option>
+           <option value="110">110</option>
+           <option value="111">111</option>
+           <option value="112">112</option>
+           <option value="113">113</option>
+           <option value="114">114</option>
+           <option value="115">115</option>
+           <option value="116">116</option>
+           <option value="117">117</option>
+           <option value="118">118</option>
+           <option value="119">119</option>
+           <option value="120">120</option>
+           <option value="121">121</option>
+           <option value="122">122</option>
+           <option value="123">123</option>
+           <option value="124">124</option>
+           <option value="125">125</option>
+           <option value="126">126</option>
+           <option value="127">127</option>
+           <option value="128">128</option>
+           <option value="129">129</option>
+           <option value="130">130</option>
+           <option value="131">131</option>
+           <option value="132">132</option>
+           <option value="133">133</option>
+           <option value="134">134</option>
+           <option value="135">135</option>
+           <option value="136">136</option>
+           <option value="137">137</option>
+        </select>
+        <br/>
+        <label for="secondDropdown1">Select atom name:</label>
+    <select id="secondDropdown1">
+      <!-- Options will be dynamically populated based on the selection in the first dropdown -->
+    </select>
+      
+    </div>
+
+    <div id="angleOptions">
+        <!-- Your angle dropdowns and labels go here -->
+        <label for="firstDropdown">Select residue number:</label>
+        <select id="firstDropdown2" onchange="updateSecondDropdown2()">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+            <option value="32">32</option>
+            <option value="33">33</option>
+            <option value="34">34</option>
+            <option value="35">35</option>
+            <option value="36">36</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+            <option value="45">45</option>
+            <option value="46">46</option>
+            <option value="47">47</option>
+            <option value="48">48</option>
+            <option value="49">49</option>
+            <option value="50">50</option>
+            <option value="51">51</option>
+            <option value="52">52</option>
+            <option value="53">53</option>
+            <option value="54">54</option>
+            <option value="55">55</option>
+            <option value="56">56</option>
+            <option value="57">57</option>
+            <option value="58">58</option>
+            <option value="59">59</option>
+            <option value="60">60</option>
+            <option value="61">61</option>
+            <option value="62">62</option>
+            <option value="63">63</option>
+            <option value="64">64</option>
+            <option value="65">65</option>
+            <option value="66">66</option>
+            <option value="67">67</option>
+            <option value="68">68</option>
+            <option value="69">69</option>
+            <option value="70">70</option>
+            <option value="71">71</option>
+            <option value="72">72</option>
+            <option value="73">73</option>
+            <option value="74">74</option>
+            <option value="75">75</option>
+            <option value="76">76</option>
+            <option value="77">77</option>
+            <option value="78">78</option>
+            <option value="79">79</option>
+            <option value="80">80</option>
+            <option value="81">81</option>
+            <option value="82">82</option>
+            <option value="83">83</option>
+            <option value="84">84</option>
+            <option value="85">85</option>
+            <option value="86">86</option>
+            <option value="87">87</option>
+            <option value="88">88</option>
+            <option value="89">89</option>
+            <option value="90">90</option>
+            <option value="91">91</option>
+            <option value="92">92</option>
+            <option value="93">93</option>
+            <option value="94">94</option>
+            <option value="95">95</option>
+            <option value="96">96</option>
+            <option value="97">97</option>
+            <option value="98">98</option>
+            <option value="99">99</option>
+            <option value="100">100</option>
+            <option value="101">101</option>
+            <option value="102">102</option>
+            <option value="103">103</option>
+            <option value="104">104</option>
+            <option value="105">105</option>
+            <option value="106">106</option>
+            <option value="107">107</option>
+            <option value="108">108</option>
+            <option value="109">109</option>
+            <option value="110">110</option>
+            <option value="111">111</option>
+            <option value="112">112</option>
+            <option value="113">113</option>
+            <option value="114">114</option>
+            <option value="115">115</option>
+            <option value="116">116</option>
+            <option value="117">117</option>
+            <option value="118">118</option>
+            <option value="119">119</option>
+            <option value="120">120</option>
+            <option value="121">121</option>
+            <option value="122">122</option>
+            <option value="123">123</option>
+            <option value="124">124</option>
+            <option value="125">125</option>
+            <option value="126">126</option>
+            <option value="127">127</option>
+            <option value="128">128</option>
+            <option value="129">129</option>
+            <option value="130">130</option>
+            <option value="131">131</option>
+            <option value="132">132</option>
+            <option value="133">133</option>
+            <option value="134">134</option>
+            <option value="135">135</option>
+            <option value="136">136</option>
+            <option value="137">137</option>
+         </select>
+         <br/>
+         <label for="secondDropdown2">Select atom name:</label>
+         <select id="secondDropdown2">
+      <!-- Options will be dynamically populated based on the selection in the first dropdown -->
+         </select> 
+         <br/>
+         <label for="firstDropdown3">Select residue number:</label>
+         <select id="firstDropdown3" onchange="updateSecondDropdown3()">
+             <option value="1">1</option>
+             <option value="2">2</option>
+             <option value="3">3</option>
+             <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+            <option value="32">32</option>
+            <option value="33">33</option>
+            <option value="34">34</option>
+            <option value="35">35</option>
+            <option value="36">36</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+            <option value="45">45</option>
+            <option value="46">46</option>
+            <option value="47">47</option>
+            <option value="48">48</option>
+            <option value="49">49</option>
+            <option value="50">50</option>
+            <option value="51">51</option>
+            <option value="52">52</option>
+            <option value="53">53</option>
+            <option value="54">54</option>
+            <option value="55">55</option>
+            <option value="56">56</option>
+            <option value="57">57</option>
+            <option value="58">58</option>
+            <option value="59">59</option>
+            <option value="60">60</option>
+            <option value="61">61</option>
+            <option value="62">62</option>
+            <option value="63">63</option>
+            <option value="64">64</option>
+            <option value="65">65</option>
+            <option value="66">66</option>
+            <option value="67">67</option>
+            <option value="68">68</option>
+            <option value="69">69</option>
+            <option value="70">70</option>
+            <option value="71">71</option>
+            <option value="72">72</option>
+            <option value="73">73</option>
+            <option value="74">74</option>
+            <option value="75">75</option>
+            <option value="76">76</option>
+            <option value="77">77</option>
+            <option value="78">78</option>
+            <option value="79">79</option>
+            <option value="80">80</option>
+            <option value="81">81</option>
+            <option value="82">82</option>
+            <option value="83">83</option>
+            <option value="84">84</option>
+            <option value="85">85</option>
+            <option value="86">86</option>
+            <option value="87">87</option>
+            <option value="88">88</option>
+            <option value="89">89</option>
+            <option value="90">90</option>
+            <option value="91">91</option>
+            <option value="92">92</option>
+            <option value="93">93</option>
+            <option value="94">94</option>
+            <option value="95">95</option>
+            <option value="96">96</option>
+            <option value="97">97</option>
+            <option value="98">98</option>
+            <option value="99">99</option>
+            <option value="100">100</option>
+            <option value="101">101</option>
+            <option value="102">102</option>
+            <option value="103">103</option>
+            <option value="104">104</option>
+            <option value="105">105</option>
+            <option value="106">106</option>
+            <option value="107">107</option>
+            <option value="108">108</option>
+            <option value="109">109</option>
+            <option value="110">110</option>
+            <option value="111">111</option>
+            <option value="112">112</option>
+            <option value="113">113</option>
+            <option value="114">114</option>
+            <option value="115">115</option>
+            <option value="116">116</option>
+            <option value="117">117</option>
+            <option value="118">118</option>
+            <option value="119">119</option>
+            <option value="120">120</option>
+            <option value="121">121</option>
+            <option value="122">122</option>
+            <option value="123">123</option>
+            <option value="124">124</option>
+            <option value="125">125</option>
+            <option value="126">126</option>
+            <option value="127">127</option>
+            <option value="128">128</option>
+            <option value="129">129</option>
+            <option value="130">130</option>
+            <option value="131">131</option>
+            <option value="132">132</option>
+            <option value="133">133</option>
+            <option value="134">134</option>
+            <option value="135">135</option>
+            <option value="136">136</option>
+            <option value="137">137</option>
+        </select>
+        <br/>
+        <label for="secondDropdown3">Select atom name:</label>
+    <select id="secondDropdown3">
+      <!-- Options will be dynamically populated based on the selection in the first dropdown -->
+    </select>
+    <br/>
+    <label for="firstDropdown4">Select residue number:</label>
+    <select id="firstDropdown4" onchange="updateSecondDropdown4()">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21</option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+      <option value="24">24</option>
+      <option value="25">25</option>
+      <option value="26">26</option>
+      <option value="27">27</option>
+      <option value="28">28</option>
+      <option value="29">29</option>
+      <option value="30">30</option>
+      <option value="31">31</option>
+      <option value="32">32</option>
+      <option value="33">33</option>
+      <option value="34">34</option>
+      <option value="35">35</option>
+      <option value="36">36</option>
+      <option value="37">37</option>
+      <option value="38">38</option>
+      <option value="39">39</option>
+      <option value="40">40</option>
+      <option value="41">41</option>
+      <option value="42">42</option>
+      <option value="43">43</option>
+      <option value="44">44</option>
+      <option value="45">45</option>
+      <option value="46">46</option>
+      <option value="47">47</option>
+      <option value="48">48</option>
+      <option value="49">49</option>
+      <option value="50">50</option>
+      <option value="51">51</option>
+      <option value="52">52</option>
+      <option value="53">53</option>
+      <option value="54">54</option>
+      <option value="55">55</option>
+      <option value="56">56</option>
+      <option value="57">57</option>
+      <option value="58">58</option>
+      <option value="59">59</option>
+      <option value="60">60</option>
+      <option value="61">61</option>
+      <option value="62">62</option>
+      <option value="63">63</option>
+      <option value="64">64</option>
+      <option value="65">65</option>
+      <option value="66">66</option>
+      <option value="67">67</option>
+      <option value="68">68</option>
+      <option value="69">69</option>
+      <option value="70">70</option>
+      <option value="71">71</option>
+      <option value="72">72</option>
+      <option value="73">73</option>
+      <option value="74">74</option>
+      <option value="75">75</option>
+      <option value="76">76</option>
+      <option value="77">77</option>
+      <option value="78">78</option>
+      <option value="79">79</option>
+      <option value="80">80</option>
+      <option value="81">81</option>
+      <option value="82">82</option>
+      <option value="83">83</option>
+      <option value="84">84</option>
+      <option value="85">85</option>
+      <option value="86">86</option>
+      <option value="87">87</option>
+      <option value="88">88</option>
+      <option value="89">89</option>
+      <option value="90">90</option>
+      <option value="91">91</option>
+      <option value="92">92</option>
+      <option value="93">93</option>
+      <option value="94">94</option>
+      <option value="95">95</option>
+      <option value="96">96</option>
+      <option value="97">97</option>
+      <option value="98">98</option>
+      <option value="99">99</option>
+      <option value="100">100</option>
+      <option value="101">101</option>
+      <option value="102">102</option>
+      <option value="103">103</option>
+      <option value="104">104</option>
+      <option value="105">105</option>
+      <option value="106">106</option>
+      <option value="107">107</option>
+      <option value="108">108</option>
+      <option value="109">109</option>
+      <option value="110">110</option>
+      <option value="111">111</option>
+      <option value="112">112</option>
+      <option value="113">113</option>
+      <option value="114">114</option>
+      <option value="115">115</option>
+      <option value="116">116</option>
+      <option value="117">117</option>
+      <option value="118">118</option>
+      <option value="119">119</option>
+      <option value="120">120</option>
+      <option value="121">121</option>
+      <option value="122">122</option>
+      <option value="123">123</option>
+      <option value="124">124</option>
+      <option value="125">125</option>
+      <option value="126">126</option>
+      <option value="127">127</option>
+      <option value="128">128</option>
+      <option value="129">129</option>
+      <option value="130">130</option>
+      <option value="131">131</option>
+      <option value="132">132</option>
+      <option value="133">133</option>
+      <option value="134">134</option>
+      <option value="135">135</option>
+      <option value="136">136</option>
+      <option value="137">137</option>
+    </select>
+    <br/>
+    <label for="secondDropdown4">Select atom name:</label>
+    <select id="secondDropdown4">
+      <!-- Options will be dynamically populated based on the selection in the first dropdown -->
+    </select>
+    <br/>
+
+    </div>
+
+    <button id="calculateButton">Calculate</button>
+
+    <div id="result">
+        <!-- Calculated result will be displayed here -->
+    </div>
+    
+    <script>
+        // Atom names for each residue number
+        const optionsByCategory = {
+       1: ["N", "CA", "C", "CB", "O", "CG", "SD", "CE"],
+       2: ["N", "CA", "C", "CB", "O", "OG"],
+       3: ["N","CA","C","CB","O","CG","CD","OE1","OE2"],
+       4: ["N","CA","C","CB","O"],
+       5: ["N","CA","C","CB","O","CB","O","CG","CD1","CD2"],
+       6: ["N","CA","C","CB","O","CG","CD","CE","NZ"],
+       7: ["N","CA","C","CB","O","CG1","CG2","CD3"],
+       8: ["N","CA","C","CB","O","CG","CD1","CD2"],
+       9: ["N","CA","C","CB","O","CG","ND2","OD1"],
+       10: ["N","CA","C","CB","O","CG","ND2","OD1"],
+       11: ["N","CA","C","CB","O","CG1","CG2","CD1"],
+       12: ["N","CA","C","CB","O","CG","CD","NE","NH1","NH2","CZ"],
+       13: ["N","CA","C","CB","O","CG2","OG1"],
+       14: ["N","CA","C","CB","O","CG","CD1","CD2"],
+       15: ["N","CA","C","CB","O","CG","CD","NE","NH1","NH2","CZ"],
+       16: ["N","CA","C","CB","O"],
+       17: ["N","CA","C","CB","O","CG","CG","CD","NE2","OE1"],
+       18: ["N","CA","C","CB","O"],
+       19: ["N","CA","C","CB","O","CG","CD","NE","NH1","NH2","CZ"],
+       20: ["N","CA","C","CB","O","CG","CD","OE1","OE2"],
+       21: ["N","CA","C","CB","O","SG"],
+       22: ["N","CA","C","CB","O","CG2","OG1"],
+       23: ["N","CA","C","CB","O","CG","CD1","CD2"],
+       24: ["N"," CA","C","CB","O","CG","CD","OE1","OE2"],
+       25: ["N","CA","C","CB","O","CG2","OG1"],
+       26: ["N","CA","C","CB","O","CG","CD1","CD2"],
+       27: ["N","CA","C","CB","O","CG","CD","OE1","OE2"],
+       28: ["N","CA","C","CB","O","CG","CD","OE1","OE2"],
+       29: ["N","CA","C","CB","O","CG","SD","CE"],
+       30: ["N","CA","C","CB","O","CG","CD1","CD2"],
+       31: ["N","CA","C","CB","O","CG","CD","OE1","OE2"],
+       32: ["N","CA","C","CB","O","CG","CD","CE","NZ"],
+       33: ["N","CA","C","CB","O","CG","CD1","CD2"],
+       34: ["N","CA","C","CB","O","CG","CD","OE1","OE2"],
+       35: ["N","CA","C","CB","O","CG1","CG2"],
+       36: ["N","CA","C","CB","O","CG1","CG2"],
+       37: ["N","CA","C","CB","O","CG1,CG2"],
+       38: ["N","CA","C","CB","O","CG","ND2","OD1"],
+       39: ["N","CA","C","CB","O","CG","CD","OE1","OE2"],
+       40: ["N","CA","CB","O","CG","CD","NE","NH1","NH2","CZ"],
+       41: ["N","CA","C","CB","O","CG","CD","NE","NH1","NH2","CZ"],
+       42: ["N","CA","C","CB","O","CG","CD","OE1","OE2"],
+       43: ["N","CA","C","CB","O","CG","CD","OE1","OE2"],
+       44: ["N","CA","C","CB","O","CG","CD","OE1","OE2"],
+       45: ["N","CA","C","CB","O","OG"],
+       46: ["N","CA","C","CB","O"],
+       47: ["N","CA","C","CB","O"],
+       48: ["N","CA","C","CB","O"],
+       49: ["N","CA","C","CB","O"],
+       50: ["N","CA","C","CB","O","CG","CD","OE1","OE2"],
+       51: ["N","CA","C","CB","O","CG1","CG2"],
+       52: ["N","CA","C","CB","O","CG","CD","OE1","OE2"],
+       53: ["N","CA","C","CB","O","CG","CD","OE1","OE2"],
+       54: ["N","CA","C","CB","O","CD","NE","NH1","NH2","CZ"],
+       55: ["N","CA","C","CB","O","CG2","OG1"],
+       56: ["N","CA","C","CB","O","CG","CD","NE","NH1","NH2","NE"],
+       57: ["N","CA","C","CB","O","CG","CD","CE","NZ",],
+       58: ["N","CA","C","CB","O","C","CD1","CD2"],
+       59: ["N","CA","C","CB","O","CG","CD","NE2","OE1"],
+       60: ["N","CA","C","CB","O","CG","CD","NE2","OE1"],
+       61: ["N","CA","C","CB","O","CG","CD1","CD2","CE1","CE2","OH","CZ"],
+       62: ["N","CA","C","CB","O","CG","CD","NE","NH1","NH2","CZ"],
+       63: ["N","CA","C","CB","O","CG","CD","OE1","OE2"],
+       64: ["N","CA","C","CB","O","CG","SD","CE"],
+       65: ["N","CA","C","CB","O","C","CD1","CD2"],
+       66: ["N","CA","C","CB","O","CG1","CG2","CD1"],
+       67: ["N","CA","C","CB","O"],
+       68: ["N","CA","C","CB","O","CG","OD1","OD2"],
+       69: ["N","CA","C","O"],
+       70: ["N","CA","C","CB","O","CG1","CG2","CD1"],
+       71: ["N","CA","C","CB","O","CG","OD1","OD2"],
+       72: ["N","CA","C","CB","O","CG","CD"],
+       73: ["N","CA","C","CB","O","CG","ND2","OD1"],
+       74: ["N","CA","C","CB","O","CG","CD","OE1","OE2"],
+       75: ["N","CA","C","CB","O","CG","CD1","CD2"],
+       76: ["N","CA","C","CB","O","CG","CD1","CD2"],
+       77: ["N","CA","C","CB","O","CG","ND2","OD1"],
+       78: ["N","CA","C","CB","O","OG"],
+       79: ["N","CA","C","CB","O","CG","CD1","CD2"],
+       80: ["N","CA","C","CB","O"],
+       81: ["N","CA","C","CB","O"],
+       82: ["N","CA","C","CB","O","CG1","CG2"],
+       83: ["N","CA","C","CB","O","CG","CD","CE","NZ"],
+       84: ["N","CA","C","CB","O","OG"],
+       85: ["N","CA","C","O"],
+       86: ["N","CA","C","CB","O","CG2","OG1"],
+       87: ["N","CA","C","CB","O","CG","CD","CE","NZ"],
+       88: ["N","CA","C","CB","O"],
+       89: ["N","CA","C","CB","O","CG","CD","CE","NZ"],
+       90: ["N","CA","C","CB","O","CG","CD","NE","NH1","NH2","CZ"],
+       91: ["N","CA","C","CB","O"],
+       92: ["N","CA","C","CB","O","CG","CD","NE2","OE1"],
+       93: ["N","CA","C","CB","O","CG","CD","NE","NH1","NH2","CZ"],
+       94: ["N","CA","C","CB","O","CG","CD"],
+       95: ["N","CA","C","CB","O"],
+       96: ["N","CA","C","CB","O","CG","CD","CE","NZ"],
+       97: ["N","CA","C","CB","O","CG","CD1","CD2","CE1","CE2","OH","CZ"],
+       98: ["N","CA","C","CB","O","OG"],
+       99: ["N","CA","C","CB","O","CG","CD1","CD2","CE1","CE2","OH","CZ"],
+       100: ["N","CA","C","CB","O","CG1","CG2"],
+       101: ["N","CA","C","CB","O","CG","OD1","OD2"],
+       102: ["N","CA","C","CB","O","CG","CD","OE1","OE2"],
+       103: ["N","CA","C","CB","O","CG","ND2","OD1"],
+       104: ["N","CA","C","O"],
+       105: ["N","CA","C","CB","O","CG","CD","OE1","OE2"],
+       106: ["N","CA","C","CB","O","CG2","OG1"],
+       107: ["N","CA","C","CB","O","CG","CD","CE","NZ"],
+       108: ["N","CA","C","CB","O","CG2","OG1"],
+       109: ["N","CA","C","CB","O","CG","CD1","CD2","CE2","CE3","NE1","CH2","CZ2","CZ3"],
+       110: ["N","CA","C","CB","O","CG2","OG1"],
+       111: ["N","CA","C","O"],
+       112: ["N","CA","C","CB","O","CG","CD","NE2","OE1"],
+       113: ["N","CA","C","O"],
+       114: ["N","CA","C","CB","O","CG","CD","NE","NH1","NH2","CZ"],
+       115: ["N","CA","C","CB","O","CG2","OG1"],
+       116: ["N","CA","CB","O","CG","CD"],
+       117: ["N","CA","C","CB","O"],
+       118: ["N","CA","C","CB","O","CG1","CG2"],
+       119: ["N","CA","C","CB","O","CG1","CG2","CD1"],
+       120: ["N","CA","C","CB","O","CG","CD","CE","NZ"],
+       121: ["N","CA","C","CB","O","CG","CD","CE","NZ"],
+       122: ["N","CA","C","CB","O"],
+       123: ["N","CA","C","CB","O","CG","SD","CE"],
+       124: ["N","CA","C","CB","O","CG","OD1","OD2"],
+       125: ["N","CA","C","CB","O","CG","CD","OE1","OE2"],
+       126: ["N","CA","C","CB","O","CG","CD","NE2","OE1"],
+       127: ["N","CA","C","O"],
+       128: ["N","CA","C","CB","O","CG","CD","CE","NZ"],
+       129: ["N","CA","C","CB","O","OG"],
+       130: ["N","CA","C","CB","O","CG","CD1","CD2"],
+       131: ["N","CA","C","CB","O","CG","OD1","OD2"],
+       132: ["N","CA","C","CB","O","CG","OD1","OD2"],
+       133: ["N","CA","C","CB","O","CG","CD1","CD2","CE1","CE2","CZ"],
+       134: ["N","CA","C","CB","O","CG","CD1","CD2"],
+       135: ["N","CA","C","CB","O","CG1","CG2","CD1"],
+       136: ["N","CA","C","CB","O","CG","CD","CE","NZ"],
+       137: ["N","CA","C","CB","O","CG","CD","NE2","OE1","OXT"], 
+      };
+    function updateSecondDropdown() {
+      const firstDropdown = document.getElementById("firstDropdown");
+      const secondDropdown = document.getElementById("secondDropdown");
+      const selectedCategory = firstDropdown.value;
+
+      // Clear existing options in the second dropdown
+      secondDropdown.innerHTML = "";
+
+      // Add new options based on the selected category
+      optionsByCategory[selectedCategory].forEach(option => {
+        const optionElement = document.createElement("option");
+        optionElement.value = option;
+        optionElement.text = option;
+        secondDropdown.appendChild(optionElement);
+      });
+    }
+
+    // Initialize the second dropdown based on the default selection in the first dropdown
+    updateSecondDropdown();
+    function updateSecondDropdown1() {
+      const firstDropdown1 = document.getElementById("firstDropdown1");
+      const secondDropdown1 = document.getElementById("secondDropdown1");
+      const selectedCategory = firstDropdown1.value;
+
+      // Clear existing options in the second dropdown
+      secondDropdown1.innerHTML = "";
+
+      // Add new options based on the selected category
+      optionsByCategory[selectedCategory].forEach(option => {
+        const optionElement = document.createElement("option");
+        optionElement.value = option;
+        optionElement.text = option;
+        secondDropdown1.appendChild(optionElement);
+      });
+    }
+    // Initialize the second dropdown based on the default selection in the first dropdown
+    updateSecondDropdown1();
+    function updateSecondDropdown2() {
+      const firstDropdown2 = document.getElementById("firstDropdown2");
+      const secondDropdown2 = document.getElementById("secondDropdown2");
+      const selectedCategory = firstDropdown2.value;
+
+      // Clear existing options in the second dropdown
+      secondDropdown2.innerHTML = "";
+
+      // Add new options based on the selected category
+      optionsByCategory[selectedCategory].forEach(option => {
+        const optionElement = document.createElement("option");
+        optionElement.value = option;
+        optionElement.text = option;
+        secondDropdown2.appendChild(optionElement);
+      });
+    }
+    updateSecondDropdown2();
+
+    function updateSecondDropdown3() {
+      const firstDropdown3 = document.getElementById("firstDropdown3");
+      const secondDropdown3 = document.getElementById("secondDropdown3");
+      const selectedCategory = firstDropdown3.value;
+
+      // Clear existing options in the second dropdown
+      secondDropdown3.innerHTML = "";
+
+      // Add new options based on the selected category
+      optionsByCategory[selectedCategory].forEach(option => {
+        const optionElement = document.createElement("option");
+        optionElement.value = option;
+        optionElement.text = option;
+        secondDropdown3.appendChild(optionElement);
+      });
+    }
+    // Initialize the second dropdown based on the default selection in the first dropdown
+    updateSecondDropdown3();
+    function updateSecondDropdown4() {
+      const firstDropdown4 = document.getElementById("firstDropdown4");
+      const secondDropdown4 = document.getElementById("secondDropdown4");
+      const selectedCategory = firstDropdown1.value;
+
+      // Clear existing options in the second dropdown
+      secondDropdown4.innerHTML = "";
+
+      // Add new options based on the selected category
+      optionsByCategory[selectedCategory].forEach(option => {
+        const optionElement = document.createElement("option");
+        optionElement.value = option;
+        optionElement.text = option;
+        secondDropdown4.appendChild(optionElement);
+      });
+    }
+    // Initialize the second dropdown based on the default selection in the first dropdown
+    updateSecondDropdown4();
+
+
+
+        function updateAtomNames(residueSelectId, atomNameSelectId) {
+            const residueNumber = document.getElementById(residueSelectId).value;
+            const atomNameSelect = document.getElementById(atomNameSelectId);
+            atomNameSelect.innerHTML = ''; // Clear existing options
+
+            // Populate atom names based on the selected residue number
+            atomNamesByResidue[residueNumber].forEach(atomName => {
+                const option = document.createElement("option");
+                option.value = atomName;
+                option.text = atomName;
+                atomNameSelect.appendChild(option);
+            });
+        }
+
+        document.getElementById("calculationType").addEventListener("change", () => {
+            const distanceOptions = document.getElementById("distanceOptions");
+            const angleOptions = document.getElementById("angleOptions");
+
+            if (document.getElementById("calculationType").value === "distance") {
+                distanceOptions.style.display = "block";
+                angleOptions.style.display = "none";
+            } else {
+                distanceOptions.style.display = "none";
+                angleOptions.style.display = "block";
+            }
+        });
+
+        document.getElementById("calculateButton").addEventListener("click", () => {
+            const calculationType = document.getElementById("calculationType").value;
+            let result;
+
+            if (calculationType === "distance") {
+                const residue1 = document.getElementById("distanceResidue1").value;
+                const atom1 = document.getElementById("atomNameDistance1").value;
+                const residue2 = document.getElementById("distanceResidue2").value;
+                const atom2 = document.getElementById("atomNameDistance2").value;
+
+                result = calculateDistance(residue1, atom1, residue2, atom2);
+            } else {
+                const residue1 = document.getElementById("angleResidue1").value;
+                const atom1 = document.getElementById("atomNameAngle1").value;
+                const residue2 = document.getElementById("angleResidue2").value;
+                const atom2 = document.getElementById("atomNameAngle2").value;
+                const residue3 = document.getElementById("angleResidue3").value;
+                const atom3 = document.getElementById("atomNameAngle3").value;
+
+                result = calculateAngle(residue1, atom1, residue2, atom2, residue3, atom3);
+            }
+
+            document.getElementById("result").innerText = result;
+        });
+
+        function calculateDistance(residue1, atom1, residue2, atom2) {
+            // Placeholder logic for distance calculation
+            
+            return `Distance calculation: Residue ${residue1} ${atom1} to Residue ${residue2} ${atom2}`;
+        }
+
+        function calculateAngle(residue1, atom1, residue2, atom2, residue3, atom3) {
+            // Placeholder logic for angle calculation
+           
+
+            document.getElementById("angleResult").innerText = "Angle calculation: Residue " + residue1 + " " + atom1 + " to Residue " + residue2 + " " + atom2 + " to Residue " + residue3 + " " + atom3 + " = " + angle.toFixed(2) + " degrees";
+            return `Angle calculation: Residue ${residue1} ${atom1} to Residue ${residue2} ${atom2} to Residue ${residue3} ${atom3}`;
+        }
+    </script>
+</body>
+</html>
